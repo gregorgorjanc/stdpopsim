@@ -40,6 +40,8 @@ class Citation:
     :vartype author: str
     :ivar year: Year of publication as a 4 digit integer, e.g. 2008.
     :vartype year: int
+    :ivar reasons: A set of reasons for citing this publication.
+    :vartype reasons: set
     """
 
     doi = attr.ib(type=str, kw_only=True)
@@ -108,14 +110,21 @@ class Citation:
 
 _stdpopsim_citation = Citation(
     doi="https://doi.org/10.7554/eLife.54967",
-    year="2020",
+    year=2020,
     author="Adrion et al.",
     reasons={CiteReason.STDPOPSIM},
 )
 
 _catalog_citation = Citation(
     doi="https://doi.org/10.7554/eLife.84874",
-    year="2023",
+    year=2023,
     author="Lauterbur et al.",
+    reasons={CiteReason.STDPOPSIM},
+)
+
+_selection_citation = Citation(
+    doi="https://doi.org/10.1101/2025.03.23.644823",
+    year=2025,
+    author="Gower et al.",
     reasons={CiteReason.STDPOPSIM},
 )

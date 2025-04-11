@@ -11,7 +11,7 @@ _gm = stdpopsim.GeneticMap(
     description="Sex-averaged genetic map for the Norwegian Red (NRF) cattle breed",
     long_description="""
         Sex-averaged genetic map for the Norwegian Red cattle (NRF) breed
-        from Brekke et al. (2023). Sex-specific genetic maps weere estimated
+        from Brekke et al. (2023). Sex-specific genetic map was estimated
         with Lepmap3 after identifying individual crossovers in
         a multi-generational pedigree with 110,555 individuals,
         which had genotypes at 35,880 autosomal SNPs (after filtering).
